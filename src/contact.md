@@ -1,5 +1,5 @@
 ---
-title: Welcome
+title: Contact
 description: Basic template with Eleventy, LiquidJS & Sass processing.
 layout: default
 tags: primary
