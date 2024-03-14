@@ -11,18 +11,8 @@
 
 <body>
     {{ content }}
-    <script>
-        if (window.netlifyIdentity) {
-            window.netlifyIdentity.on("init", user => {
-                if (!user) {
-                    window.netlifyIdentity.on("login", () => {
-                        document.location.href = "/admin/";
-                    });
-                }
-            });
-        }
-    </script>
     <script src="/assets/js/nav.js"></script>
+    <script src="/assets/js/netlifyIdentity.js"></script>
 </body>
 
 </html>
