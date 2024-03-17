@@ -9,7 +9,7 @@
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
-<body>
+<body class="{{ title | downcase |remove: ' ' }}">
     {{ content }}
     <script src="/assets/js/nav.js"></script>
     <script src="/assets/js/netlifyIdentity.js"></script>

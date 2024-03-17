@@ -1,0 +1,24 @@
+/*****************/
+/* Layout styles */
+/*****************/
+.welcome {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    @media (min-width: 600px) {
+        main {
+            width: 80%;
+            margin: auto;
+        }
+    }
+}
+.aboutus {
+    display: flex;
+    flex-direction: column;
+}
+.aboutus main {
+    flex: 1;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
