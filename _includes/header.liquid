@@ -1,14 +1,11 @@
 <header>
     <nav aria-label="Primary">
         <ul>
-          {% for nav in collections.primary %}
-            <li {% if page.url == nav.url %}aria-current="page"{% endif %}>
-              <a href="{{ nav.url }}">{{ nav.data.title }}</a>
-            </li>
-          {% endfor %}
+          {%- for nav in collections.primary %}
+            <li{% if page.url == nav.url %} aria-current="page"{% endif %}><a href="{{ nav.url }}">{{ nav.data.title }}</a></li>
+          {%- endfor %}
         </ul>
     </nav>
-
     <template id="burger-template">
         <button type="button" aria-expanded="false" aria-label="Menu" aria-controls="mainnav">
             <svg width="24" height="24" aria-hidden="true">
