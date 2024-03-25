@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{title}} - {{site.description}} ({{site.name}})</title>
-    <link rel="stylesheet" href="/assets/css/{{site.css}}">
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body class="{{ title | downcase |remove: ' ' }}">
     {{ content }}
-    <script src="/assets/js/nav.js"></script>
-    <script src="/assets/js/netlifyIdentity.js"></script>
+    <script src="{{ '/assets/js/nav.js' | url }}"></script>
+    <script src="{{ '/assets/js/netlifyIdentity.js' | url }}"></script>
 </body>
 
 </html>
